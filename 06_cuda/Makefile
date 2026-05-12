@@ -25,4 +25,5 @@
 12_hip: 12_hip.cpp
 	hipcc 12_hip.cpp
 13_bucket_sort: 13_bucket_sort.cpp
-	g++ 13_bucket_sort.cpp
+# 	g++ 13_bucket_sort.cpp
+	nvcc -x cu 13_bucket_sort.cpp
